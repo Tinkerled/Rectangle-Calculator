@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="140dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="20px"
+            android:text="Calculatrice"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="30px">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:gravity="center|right|center_horizontal"
+                android:text="Longueur: "
+                android:textSize="18sp"></TextView>
+
+            <EditText
+                android:id="@+id/txtLongueur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:ems="10"
+                android:inputType="number" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="30px">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:gravity="center|right|center_horizontal"
+                android:text="Largeur:"
+                android:textSize="18sp"></TextView>
+
+            <EditText
+                android:id="@+id/txtLargeur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:onClick="calculate"
+            android:text="Calculer"
+            android:textColor="@android:color/background_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="30px">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:gravity="center|right|center_horizontal"
+                android:text="Perimetre: "
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/textPeri"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:text=""></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="30px">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:gravity="center|right|center_horizontal"
+                android:text="Air: "
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/textAir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:text=""></TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:onClick="reset"
+            android:text="Reset"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
